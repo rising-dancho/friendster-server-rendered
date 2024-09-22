@@ -41,6 +41,7 @@ p {
   background-color: var(--dark-background);
   color: var(--white-text);
   padding-top: 8.688rem;
+  padding-bottom: 8.688rem;
   padding-left: 11.75rem;
 }
 
