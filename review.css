@@ -1,75 +1,144 @@
+/* ------------------------ */
+/* VARIABLES                */
+/* ------------------------ */
 :root {
-  /* fonts */
+  /* ----> SPACING <---- */
+  --spacing-2px: 0.125rem;
+  --spacing-4px: 0.25rem;
+  --spacing-8px: 0.5rem;
+  --spacing-12px: 0.75rem;
+  --spacing-16px: 1rem;
+  --spacing-24px: 1.5rem;
+  --spacing-32px: 2rem;
+  --spacing-48px: 3rem;
+  --spacing-64px: 4rem;
+  --spacing-80px: 5rem;
+  --spacing-96px: 6rem;
+  --spacing-128px: 8rem;
+  --spacing-144px: 9rem;
+
+  /* ----> TYPGRAPHY SYSTEM <---- */
+  --fs-10: 0.625rem;
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-30: 1.875rem;
+  --fs-36: 2.25rem;
+  --fs-44: 2.75rem;
+  --fs-52: 3.25rem;
+  --fs-62: 3.875rem;
+  --fs-74: 4.625rem;
+  --fs-86: 5.375rem;
+  --fs-98: 6.125rem;
+
+  /* ----> WEIGHTS <---- */
+  --fw-100--thin: 100;
+  --fw-200--extra-light: 200;
+  --fw-300--light: 300;
+  --fw-400--normal: 400;
+  --fw-500--medium: 500;
+  --fw-600--semi-bold: 600;
+  --fw-700--bold: 700;
+  --fw-800--extra-bold: 800;
+  --fw-900--black: 900;
+
+  /* ----> COLORS <---- */
   --white-text: #f9fdff;
   --black-text: #283f53;
 
-  /* backgrounds */
   --dark-background: #001d37;
   --light-background: #f1f8ff;
   --light-background-darkened: #d2dfea;
 
-  /* outline */
   --dark-outline: #001d37;
+
+  /* ----> SHADOWS <---- */
+
+  /* ----> BORDER RADIUS <---- */
+  --border-radius-8px: 8px;
+  --border-radius-12px: 12px;
+
+  /* ----> MISC <---- */
+  --max-width: 1440px;
+
+  /* padding */
+  --tb-padding-lg: 8.688rem;
+  --lr-padding-lg: 11.75rem;
+
+  --tb-padding-sm: 4.688rem;
+  --lr-padding-sm: 11.75rem;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-/* HELPER CLASSES */
+/* ------------------------ */
+/* HELPER CLASSES           */
+/* ------------------------ */
 
 .center {
   margin: 0 auto !important;
 }
 
 .max-width {
-  max-width: 1440px;
+  max-width: var(--max-width);
 }
 
 .padding-lg {
-  padding-top: 8.688rem;
-  padding-bottom: 8.688rem;
-  padding-left: 11.75rem;
-  padding-right: 11.75rem;
+  padding-top: var(--tb-padding-lg);
+  padding-bottom: var(--tb-padding-lg);
+  padding-left: var(--lr-padding-lg);
+  padding-right: var(--lr-padding-lg);
 }
 
 .padding-sm {
-  padding-top: 4.688rem;
-  padding-bottom: 4.688rem;
+  padding-top: var(--tb-padding-sm);
+  padding-bottom: var(--tb-padding-sm);
+  padding-left: var(--lr-padding-sm);
+  padding-right: var(--lr-padding-sm);
+}
+
+.top,
+.middle,
+.bottom {
+  width: 100%;
 }
 
 .top {
   background-color: var(--dark-background);
   color: var(--white-text);
-  width: 100%;
 }
 
 .middle {
   background-color: var(--light-background);
   color: var(--black-text);
-  width: 100%;
 }
 
 .bottom {
   background-color: var(--light-background);
   color: var(--black-text);
-  width: 100%;
 }
 
 .btn {
   padding: 14px 40px !important;
   font-weight: 600;
+  border-radius: 71px;
 }
 
-/* HTML CLASSES*/
+/* ------------------------ */
+/* HTML CLASSES             */
+/* ------------------------ */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-body,
-html {
+html,
+body {
+  scroll-behavior: smooth;
   font-family: 'Source Code Pro', sans-serif;
 }
-
 h1 {
   font-size: 100px;
   font-weight: bold;
@@ -79,7 +148,9 @@ p {
   font-size: 20px;
 }
 
-/* MAIN CLASSES*/
+/* ------------------------ */
+/* MAIN CLASSES             */
+/* ------------------------ */
 
 /* ----> HERO  <---- */
 .hero-section {
@@ -102,7 +173,6 @@ p {
 }
 
 .hero-section a {
-  border-radius: 30px;
   padding: 5px 10px;
   font-weight: bold;
   text-decoration: none;
@@ -110,7 +180,9 @@ p {
 }
 
 .hero-section .btn-container {
+  display: flex;
   padding-top: 2.437rem;
+  gap: 10px;
 }
 
 .hero-section .btn-primary {
@@ -159,3 +231,6 @@ I think 1366px is best according to statistics.
 */
 
 /* https://ux.stackexchange.com/questions/124228/what-is-the-best-max-width-content-container-in-a-website */
+
+/* font weights */
+/* https://www.udacity.com/blog/2021/01/html-css-font-weight.html#:~:text=300%20%E2%80%93%20Light,%E2%80%93%20Semi%20Bold%20(Demi%20Bold) */
