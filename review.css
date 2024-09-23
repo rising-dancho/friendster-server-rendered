@@ -21,9 +21,11 @@
 body,
 html {
   font-family: 'Source Code Pro', sans-serif;
+  color: var(--white-text);
 }
 
-h1 {font-size: 100px;
+h1 {
+  font-size: 100px;
   font-weight: bold;
 }
 
@@ -33,6 +35,7 @@ p {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: var(--dark-background);
 }
@@ -40,7 +43,6 @@ p {
 .hero-section {
   display: flex;
   background-color: var(--dark-background);
-  color: var(--white-text);
   padding-top: 8.688rem;
   padding-bottom: 8.688rem;
   padding-left: 11.75rem;
@@ -86,4 +88,27 @@ p {
 
 .hero-section .btn-outline:hover {
   box-shadow: inset 0 0 0 2px var(--light-background);
+}
+
+.pets-section {
+  padding-top: 8.688rem;
+  padding-bottom: 8.688rem;
+  padding-left: 11.75rem;
+}
+
+.pets-section h2 {
+  font-weight: bold;
+  font-size: 85px;
+}
+
+footer {
+  padding-top: 4.688rem;
+  padding-bottom: 4.688rem;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
 }
