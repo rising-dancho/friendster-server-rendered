@@ -1,12 +1,12 @@
 :root {
   /* fonts */
-  --white-text: #d7ebfd;
-  --black-text: #001d37;
+  --white-text: #f9fdff;
+  --black-text: #2a4358;
 
   /* backgrounds */
   --dark-background: #001d37;
-  --light-background: #f0f0f0;
-  --light-background-darkened: #f0f0f0ef;
+  --light-background: #f1f8ff;
+  --light-background-darkened: #d2dfea;
 
   /* outline */
   --dark-outline: #001d37;
@@ -18,10 +18,26 @@
   box-sizing: border-box;
 }
 
+.container-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dark-background);
+  color: var(--white-text);
+}
+
+.container-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--light-background);
+  color: var(--black-text);
+}
+
 body,
 html {
   font-family: 'Source Code Pro', sans-serif;
-  color: var(--white-text);
+ 
 }
 
 h1 {
@@ -31,13 +47,6 @@ h1 {
 
 p {
   font-size: 20px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--dark-background);
 }
 
 .hero-section {
