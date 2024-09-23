@@ -75,6 +75,9 @@
   --tb-padding-lg: 8.688rem;
   --lr-padding-lg: 11.75rem;
 
+  --tb-padding-md: 8.0625rem;
+  --lr-padding-md: 11.75rem;
+
   --tb-padding-sm: 4.688rem;
   --lr-padding-sm: 11.75rem;
 }
@@ -93,6 +96,12 @@
 .padding-lg {
   padding-top: var(--tb-padding-lg);
   padding-bottom: var(--tb-padding-lg);
+  padding-left: var(--lr-padding-lg);
+  padding-right: var(--lr-padding-lg);
+}
+
+.padding-md {
+  padding-bottom: var(--tb-padding-md);
   padding-left: var(--lr-padding-lg);
   padding-right: var(--lr-padding-lg);
 }
@@ -212,7 +221,17 @@ p {
 }
 
 /* ----> CALL OUT <---- */
-/* .call-out-section  */
+.call-out-section {
+  display: flex;
+  gap: var(--spacing-16px);
+}
+
+.call-out-section .card {
+  width: 15.9375rem; /* 255px */
+  height: 20.125rem; /* 322px */
+  border: 1px solid var(--light-background);
+  padding: var(--spacing-24px);
+}
 
 /* ----> PETS  <---- */
 .pets-section {
