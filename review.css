@@ -18,6 +18,8 @@
   box-sizing: border-box;
 }
 
+/* HELPER CLASSES */
+
 .center {
   margin: 0 auto !important;
 }
@@ -38,13 +40,19 @@
   padding-bottom: 4.688rem;
 }
 
-.container-top {
+.top {
   background-color: var(--dark-background);
   color: var(--white-text);
   width: 100%;
 }
 
-.container-bottom {
+.middle {
+  background-color: var(--light-background);
+  color: var(--black-text);
+  width: 100%;
+}
+
+.bottom {
   background-color: var(--light-background);
   color: var(--black-text);
   width: 100%;
@@ -53,6 +61,8 @@
 .btn {
   padding: 14px 40px !important;
 }
+
+/* HTML CLASSES*/
 
 body,
 html {
@@ -68,9 +78,13 @@ p {
   font-size: 20px;
 }
 
+/* MAIN CLASSES*/
+
+/* ----> HERO  <---- */
 .hero-section {
   display: flex;
   background-color: var(--dark-background);
+  height: 100vh;
 }
 
 .hero-section .left {
@@ -78,12 +92,12 @@ p {
 }
 
 .hero-section .left p {
-  width: 50%;
   padding-top: 2.313rem;
+  width: 67%;
 }
 
 .hero-section .right {
-  width: 50%;
+  width: 30%;
 }
 
 .hero-section a {
@@ -115,14 +129,32 @@ p {
   box-shadow: inset 0 0 0 2px var(--light-background);
 }
 
+/* ----> PETS  <---- */
+.pets-section {
+  height: 100vh;
+}
+
 .pets-section h2 {
   font-weight: bold;
   font-size: 85px;
 }
 
+/* ----> FOOTER  <---- */
 footer p {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
 }
+
+/* 
+I think 1366px is best according to statistics.
+
+1366px – 27.81% – Rising
+1024px – 14.3% – Falling (includes both landscape and portrait views for 1024 x 768)
+1280px – 13.26% – Falling
+1920px – 9.92% – Rising
+1440px – 5.85% – Stagnant 
+*/
+
+/* https://ux.stackexchange.com/questions/124228/what-is-the-best-max-width-content-container-in-a-website */
