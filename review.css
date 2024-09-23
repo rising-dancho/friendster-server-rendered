@@ -45,6 +45,16 @@
   --fw-800--extra-bold: 800;
   --fw-900--black: 900;
 
+  /* ----> LINE HEIGHTS <---- */
+  --lh-headings: 97.3%;
+  --lh-paragraphs: 151.8%;
+
+  /* ----> LETTER SPACING <---- */
+  --ls-1_75: 1.75px;
+
+  /* ----> BORDER RADIUS <---- */
+  --br-button: 4.4375rem;
+
   /* ----> COLORS <---- */
   --white-text: #f9fdff;
   --black-text: #283f53;
@@ -57,14 +67,9 @@
 
   /* ----> SHADOWS <---- */
 
-  /* ----> BORDER RADIUS <---- */
-  --border-radius-8px: 8px;
-  --border-radius-12px: 12px;
-
   /* ----> MISC <---- */
   --max-width: 1440px;
 
-  /* padding */
   --tb-padding-lg: 8.688rem;
   --lr-padding-lg: 11.75rem;
 
@@ -122,7 +127,7 @@
 .btn {
   padding: var(--spacing-12px) var(--spacing-32px) !important;
   font-weight: var(--fw-600--semi-bold);
-  border-radius: var(--spacing-64px);
+  border-radius: var(--br-button);
 }
 
 /* ------------------------ */
@@ -139,13 +144,16 @@ body {
   scroll-behavior: smooth;
   font-family: 'Source Code Pro', sans-serif;
 }
+
 h1 {
   font-size: var(--fs-98);
   font-weight: var(--fw-700--bold);
+  line-height: var(--lh-headings);
 }
 
 p {
   font-size: var(--fs-20);
+  line-height: var(--lh-paragraphs);
 }
 
 /* ------------------------ */
