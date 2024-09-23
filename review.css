@@ -1,7 +1,7 @@
 :root {
   /* fonts */
   --white-text: #f9fdff;
-  --black-text: #2a4358;
+  --black-text: #283f53;
 
   /* backgrounds */
   --dark-background: #001d37;
@@ -18,26 +18,45 @@
   box-sizing: border-box;
 }
 
+.center {
+  margin: 0 auto !important;
+}
+
+.max-width {
+  max-width: 1440px;
+}
+
+.padding-lg {
+  padding-top: 8.688rem;
+  padding-bottom: 8.688rem;
+  padding-left: 11.75rem;
+  padding-right: 11.75rem;
+}
+
+.padding-sm {
+  padding-top: 4.688rem;
+  padding-bottom: 4.688rem;
+}
+
 .container-top {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: var(--dark-background);
   color: var(--white-text);
+  width: 100%;
 }
 
 .container-bottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: var(--light-background);
   color: var(--black-text);
+  width: 100%;
+}
+
+.btn {
+  padding: 14px 40px !important;
 }
 
 body,
 html {
   font-family: 'Source Code Pro', sans-serif;
- 
 }
 
 h1 {
@@ -52,13 +71,10 @@ p {
 .hero-section {
   display: flex;
   background-color: var(--dark-background);
-  padding-top: 8.688rem;
-  padding-bottom: 8.688rem;
-  padding-left: 11.75rem;
 }
 
 .hero-section .left {
-  width: 50%;
+  width: 70%;
 }
 
 .hero-section .left p {
@@ -99,20 +115,9 @@ p {
   box-shadow: inset 0 0 0 2px var(--light-background);
 }
 
-.pets-section {
-  padding-top: 8.688rem;
-  padding-bottom: 8.688rem;
-  padding-left: 11.75rem;
-}
-
 .pets-section h2 {
   font-weight: bold;
   font-size: 85px;
-}
-
-footer {
-  padding-top: 4.688rem;
-  padding-bottom: 4.688rem;
 }
 
 footer p {
