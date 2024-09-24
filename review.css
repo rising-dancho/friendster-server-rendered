@@ -60,6 +60,9 @@
   --white-text: #f9fdff;
   --black-text: #283f53;
 
+  --accent-color: #475aff;
+  --accent-color-darkened: #4553d0;
+
   --dark-background: #001d37;
   --light-background: #f1f8ff;
   --light-background-darkened: #d2dfea;
@@ -180,7 +183,6 @@ p {
 /* ------------------------ */
 /* MAIN CLASSES             */
 /* ------------------------ */
-
 /* ----> HERO  <---- */
 .hero-section {
   display: flex;
@@ -217,12 +219,13 @@ p {
 }
 
 .hero-section .btn-primary {
-  background-color: var(--light-background);
-  border: 2px solid var(--dark-outline);
+  background-color: var(--accent-color);
+  color: var(--white-text);
+  border: 2px solid var(--light-background);
 }
 
 .hero-section .btn-primary:hover {
-  background-color: var(--light-background-darkened);
+  background-color: var(--accent-color-darkened);
 }
 
 .hero-section .btn-outline {
