@@ -168,13 +168,17 @@ h1 {
 }
 
 h2 {
-  font-weight: var(--fw-700--bold);
   font-size: var(--fs-86);
+  font-weight: var(--fw-700--bold);
+  line-height: var(--lh-headings);
+  margin-bottom: var(--spacing-32px);
 }
 
 h3 {
-  font-weight: var(--fw-700--bold);
   font-size: var(--fs-24);
+  font-weight: var(--fw-700--bold);
+  line-height: var(--lh-headings);
+  margin-bottom: var(--spacing-8px);
 }
 
 p {
