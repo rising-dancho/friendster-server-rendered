@@ -69,7 +69,7 @@
   /* ----> SHADOWS <---- */
 
   /* ----> MISC <---- */
-  --max-width-div: 1440px;
+  --max-width-div: 1480px;
   --max-width-h1: 37.5rem;
   --max-width-p: 35.625rem;
 
@@ -240,7 +240,7 @@ p {
 }
 
 .call-out-section .card {
-  width: 15.9375rem; /* 255px */
+  width: 16.5625rem; /* 255px */
   height: 20.125rem; /* 322px */
   border: 1px solid var(--light-background);
   padding: var(--spacing-24px);
