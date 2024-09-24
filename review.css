@@ -66,13 +66,14 @@
   --dark-background: #001d37;
   --light-background: #f1f8ff;
   --light-background-darkened: #d2dfea;
+  --light-background-transparent: rgba(241, 248, 255, 0.24);
 
   --dark-outline: #001d37;
 
   /* ----> SHADOWS <---- */
 
   /* ----> MISC <---- */
-  --max-width-div: 1480px;
+  --max-width-div: 1500px;
   --max-width-h1: 37.5rem;
   --max-width-p: 35.625rem;
 
@@ -242,15 +243,19 @@ p {
   gap: var(--spacing-16px);
 }
 
-.call-out-section .card {
-  width: 16.5625rem; /* 255px */
-  height: 20.125rem; /* 322px */
-  border: 1px solid var(--light-background);
-  padding: var(--spacing-24px);
-  padding-right: var(--spacing-16px);
+/* grid */
+.call-out-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-16px);
 }
 
-.call-out-section .card .card-details {
+.call-out-section .card {
+  border: 1px solid var(--light-background-transparent);
+  padding: var(--spacing-24px);
+}
+
+.call-out-section .card .intro-features {
   padding-top: var(--spacing-32px) !important;
   /* border: 1px solid red; */
 }
