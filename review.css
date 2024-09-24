@@ -47,6 +47,7 @@
 
   /* ----> LINE HEIGHTS <---- */
   --lh-headings: 97.3%;
+  --lh-paragraphs-hero: 169.3%;
   --lh-paragraphs: 151.8%;
 
   /* ----> LETTER SPACING <---- */
@@ -161,8 +162,18 @@ h1 {
   line-height: var(--lh-headings);
 }
 
+h2 {
+  font-weight: var(--fw-700--bold);
+  font-size: var(--fs-86);
+}
+
+h3 {
+  font-weight: var(--fw-700--bold);
+  font-size: var(--fs-24);
+}
+
 p {
-  font-size: var(--fs-20);
+  font-size: var(--fs-16);
   line-height: var(--lh-paragraphs);
 }
 
@@ -184,6 +195,8 @@ p {
 .hero-section .left p {
   padding-top: var(--spacing-32px);
   max-width: var(--max-width-p); /* 570px */
+  font-size: var(--fs-20);
+  line-height: var(--lh-paragraphs-hero);
 }
 
 /* .hero-section .right {
@@ -231,6 +244,12 @@ p {
   height: 20.125rem; /* 322px */
   border: 1px solid var(--light-background);
   padding: var(--spacing-24px);
+  padding-right: var(--spacing-16px);
+}
+
+.call-out-section .card .card-details {
+  padding-top: var(--spacing-32px) !important;
+  /* border: 1px solid red; */
 }
 
 /* ----> PETS  <---- */
@@ -238,9 +257,8 @@ p {
   height: 100vh;
 }
 
-.pets-section h2 {
-  font-weight: bold;
-  font-size: var(--fs-86);
+.pets-section p {
+  height: 100vh;
 }
 
 /* ----> FOOTER  <---- */
@@ -252,16 +270,13 @@ footer p {
 }
 
 /* 
-I think 1366px is best according to statistics.
-
-1366px – 27.81% – Rising
-1024px – 14.3% – Falling (includes both landscape and portrait views for 1024 x 768)
-1280px – 13.26% – Falling
-1920px – 9.92% – Rising
-1440px – 5.85% – Stagnant 
+  1366px – 27.81% – Rising
+  1024px – 14.3% – Falling (includes both landscape and portrait views for 1024 x 768)
+  1280px – 13.26% – Falling
+  1920px – 9.92% – Rising
+  1440px – 5.85% – Stagnant 
+  
+  reference: https://ux.stackexchange.com/questions/124228/what-is-the-best-max-width-content-container-in-a-website
 */
 
-/* https://ux.stackexchange.com/questions/124228/what-is-the-best-max-width-content-container-in-a-website */
-
-/* font weights */
-/* https://www.udacity.com/blog/2021/01/html-css-font-weight.html#:~:text=300%20%E2%80%93%20Light,%E2%80%93%20Semi%20Bold%20(Demi%20Bold) */
+/* font weights: https://www.udacity.com/blog/2021/01/html-css-font-weight.html#:~:text=300%20%E2%80%93%20Light,%E2%80%93%20Semi%20Bold%20(Demi%20Bold) */
