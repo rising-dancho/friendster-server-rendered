@@ -63,6 +63,8 @@
 
   --accent-color: #475aff;
   --accent-color-darkened: #4553d0;
+  --circle-color-var1: #6079ff;
+  --circle-color-var2: #d660ff;
 
   --dark-background: #001d37;
   --light-background: #f1f8ff;
@@ -146,6 +148,14 @@
   border-radius: var(--br-button);
 }
 
+.blue-bg {
+  background-color: var(--circle-color-var1);
+}
+
+.pink-bg {
+  background-color: var(--circle-color-var2);
+}
+
 /* ------------------------ */
 /* HTML CLASSES             */
 /* ------------------------ */
@@ -189,6 +199,15 @@ p {
 /* ------------------------ */
 /* MAIN CLASSES             */
 /* ------------------------ */
+/* ----> TOP: Circles  <---- */
+.top .circle {
+  width: 617px;
+  height: 617px;
+  border-radius: 50%;
+  filter: blur(150px);
+  opacity: .5;
+}
+
 /* ----> HERO  <---- */
 .hero-section {
   display: flex;
