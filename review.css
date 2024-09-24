@@ -55,6 +55,7 @@
 
   /* ----> BORDER RADIUS <---- */
   --br-button: 4.4375rem;
+  --br-card: 1.25rem;
 
   /* ----> COLORS <---- */
   --white-text: #f9fdff;
@@ -252,6 +253,7 @@ p {
 
 .call-out-section .card {
   border: 1px solid var(--light-background-transparent);
+  border-radius: var(--br-card);
   padding: var(--spacing-24px);
 }
 
