@@ -148,12 +148,18 @@
   border-radius: var(--br-button);
 }
 
-.blue-bg {
+.blue-circle {
   background-color: var(--circle-color-var1);
+  position: absolute;
+  top: -70%;
+  left: 20%;
 }
 
-.pink-bg {
+.pink-circle {
   background-color: var(--circle-color-var2);
+  position: absolute;
+  top: -8%;
+  right: -28%;
 }
 
 /* ------------------------ */
@@ -169,6 +175,7 @@ html,
 body {
   scroll-behavior: smooth;
   font-family: 'Source Code Pro', sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -205,7 +212,8 @@ p {
   height: 617px;
   border-radius: 50%;
   filter: blur(150px);
-  opacity: .5;
+  /* backdrop-filter: blur(150px); */
+  opacity: 0.5;
 }
 
 /* ----> HERO  <---- */
