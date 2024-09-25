@@ -141,7 +141,6 @@ p {
 .relative-max-width {
   position: relative;
   max-width: var(--max-width-div);
-  /* height: 100vh; */
 }
 
 .max-width {
@@ -280,6 +279,7 @@ p {
 .call-out-section {
   display: flex;
   gap: var(--spacing-16px);
+  padding-bottom: var(--lr-padding-lg) !important;
 }
 
 /* grid */
@@ -297,17 +297,10 @@ p {
 
 .call-out-section .card .intro-features {
   padding-top: var(--spacing-32px) !important;
-  /* border: 1px solid red; */
 }
 
 /* ----> PETS  <---- */
-.pets-section {
-  height: 100vh;
-}
-
-.pets-section p {
-  height: 100vh;
-}
+/* .pets-section {} */
 
 /* ----> FOOTER  <---- */
 footer p {
