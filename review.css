@@ -141,6 +141,7 @@ p {
 .relative-max-width {
   position: relative;
   max-width: var(--max-width-div);
+  /* height: 100vh; */
 }
 
 .max-width {
@@ -155,6 +156,7 @@ p {
 }
 
 .padding-md {
+  padding-top: var(--tb-padding-md);
   padding-bottom: var(--tb-padding-md);
   padding-left: var(--lr-padding-lg);
   padding-right: var(--lr-padding-lg);
@@ -223,8 +225,8 @@ p {
 /* ----> HERO  <---- */
 .hero-section {
   display: flex;
+  align-items: center;
   background-color: var(--dark-background);
-  height: 100vh;
 }
 
 .hero-section .left h1 {
