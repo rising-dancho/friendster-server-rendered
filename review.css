@@ -60,6 +60,9 @@
   /* ----> COLORS <---- */
   --white-text: #f9fdff;
   --black-text: #283f53;
+  --gray-text-heading: #9f9f9f;
+  --gray-text-p: #626262;
+  --gray-text-dimmed: #a2a2a2;
 
   --accent-color: #475aff;
   --accent-color-darkened: #4553d0;
@@ -134,6 +137,11 @@ p {
 /* ------------------------ */
 /* HELPER CLASSES           */
 /* ------------------------ */
+.active {
+  text-decoration: underline;
+  color: var(--accent-color) !important;
+}
+
 .center {
   margin: 0 auto !important;
 }
@@ -300,7 +308,29 @@ p {
 }
 
 /* ----> PETS  <---- */
-/* .pets-section {} */
+.pets-section .filter-buttons-wrapper,
+.pets-section .filter-container {
+  display: flex;
+  gap: var(--spacing-24px);
+}
+.pets-section .filter-container {
+  align-items: center;
+  color: var(--gray-text-heading);
+}
+
+.pets-section .filter-container p,
+.pets-section .filter-buttons-wrapper button {
+  font-size: 22px;
+  font-weight: var(--fw-400--normal);
+}
+
+.pets-section .filter-buttons-wrapper button {
+  background-color: transparent;
+  border: none;
+  padding: none;
+  cursor: pointer;
+  color: var(--gray-text-heading);
+}
 
 /* ----> FOOTER  <---- */
 footer p {
@@ -308,6 +338,7 @@ footer p {
   align-items: center;
   justify-content: center;
   font-size: var(--fs-14);
+  color: var(--gray-text-dimmed);
 }
 
 /* 
