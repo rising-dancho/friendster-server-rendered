@@ -91,10 +91,56 @@
 }
 
 /* ------------------------ */
+/* HTML CLASSES             */
+/* ------------------------ */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: 'Source Code Pro', sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: var(--fs-98);
+  font-weight: var(--fw-700--bold);
+  line-height: var(--lh-headings);
+}
+
+h2 {
+  font-size: var(--fs-86);
+  font-weight: var(--fw-700--bold);
+  line-height: var(--lh-headings);
+  margin-bottom: var(--spacing-32px);
+}
+
+h3 {
+  font-size: var(--fs-24);
+  font-weight: var(--fw-700--bold);
+  line-height: var(--lh-headings);
+  margin-bottom: var(--spacing-8px);
+}
+
+p {
+  font-size: var(--fs-16);
+  line-height: var(--lh-paragraphs);
+}
+
+/* ------------------------ */
 /* HELPER CLASSES           */
 /* ------------------------ */
 .center {
   margin: 0 auto !important;
+}
+
+.relative-max-width {
+  position: relative;
+  max-width: var(--max-width-div);
 }
 
 .max-width {
@@ -149,58 +195,17 @@
 }
 
 .blue-circle {
-  background-color: var(--circle-color-var1);
   position: absolute;
-  top: -70%;
-  left: 20%;
+  top: -519px;
+  left: 353px;
+  background-color: var(--circle-color-var1);
 }
 
 .pink-circle {
-  background-color: var(--circle-color-var2);
   position: absolute;
-  top: -8%;
-  right: -28%;
-}
-
-/* ------------------------ */
-/* HTML CLASSES             */
-/* ------------------------ */
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  scroll-behavior: smooth;
-  font-family: 'Source Code Pro', sans-serif;
-  overflow-x: hidden;
-}
-
-h1 {
-  font-size: var(--fs-98);
-  font-weight: var(--fw-700--bold);
-  line-height: var(--lh-headings);
-}
-
-h2 {
-  font-size: var(--fs-86);
-  font-weight: var(--fw-700--bold);
-  line-height: var(--lh-headings);
-  margin-bottom: var(--spacing-32px);
-}
-
-h3 {
-  font-size: var(--fs-24);
-  font-weight: var(--fw-700--bold);
-  line-height: var(--lh-headings);
-  margin-bottom: var(--spacing-8px);
-}
-
-p {
-  font-size: var(--fs-16);
-  line-height: var(--lh-paragraphs);
+  top: -97px;
+  left: 1314px;
+  background-color: var(--circle-color-var2);
 }
 
 /* ------------------------ */
@@ -212,7 +217,6 @@ p {
   height: 617px;
   border-radius: 50%;
   filter: blur(150px);
-  /* backdrop-filter: blur(150px); */
   opacity: 0.5;
 }
 
