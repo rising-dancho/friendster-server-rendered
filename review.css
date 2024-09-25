@@ -229,6 +229,11 @@ p {
   background-color: var(--dark-background);
 }
 
+.hero-section .left,
+.hero-section .right {
+  z-index: 5;
+}
+
 .hero-section .left h1 {
   max-width: var(--max-width-h1); /* 600px */
 }
@@ -239,10 +244,6 @@ p {
   font-size: var(--fs-20);
   line-height: var(--lh-paragraphs-hero);
 }
-
-/* .hero-section .right {
-  width: 30%;
-} */
 
 .hero-section a {
   padding: var(--spacing-4px) var(--spacing-12px);
