@@ -363,7 +363,6 @@ p {
   overflow: hidden;
   background-color: var(--light-background);
   border: 1px solid var(--gray-border);
-  height: 196px;
   box-shadow: var(--box-shadow);
 }
 
@@ -381,8 +380,9 @@ p {
 }
 
 .pets-section .pet-card img {
-  /* object-fit: cover; */
+  object-fit: cover;
   width: 100%; /* fixes the image not respecting its container */
+  height: 100%; /* fixes the gap below the image the text is long the image's height */
   order: 1;
 }
 
