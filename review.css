@@ -332,7 +332,7 @@ p {
 .pets-section .filter-container {
   align-items: center;
   color: var(--gray-text-heading);
-  margin-bottom: var(--spacing-32px);
+  margin-bottom: var(--spacing-64px);
 }
 
 .pets-section .filter-container p,
@@ -377,6 +377,7 @@ p {
 
 .pets-section .pet-card span {
   color: var(--gray-text-dimmed);
+  font-size: 13.6px;
 }
 
 .pets-section .pet-card img {
