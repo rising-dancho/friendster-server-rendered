@@ -90,10 +90,13 @@
   --lr-padding-lg: 11.75rem;
 
   --tb-padding-md: 8.0625rem;
-  --lr-padding-md: 11.75rem;
+  --lr-padding-md: 8.75rem;
 
   --tb-padding-sm: 4.688rem;
-  --lr-padding-sm: 11.75rem;
+  --lr-padding-sm: 5.75rem;
+
+  --tb-padding-x-sm: 4.0625rem;
+  --lr-padding-x-sm: 2.75rem;
 }
 
 /* ------------------------ */
@@ -323,6 +326,11 @@ p {
   margin-right: var(--spacing-48px);
 }
 
+.pets-section .filter-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .pets-section .filter-buttons-wrapper,
 .pets-section .filter-container {
   display: flex;
@@ -337,7 +345,7 @@ p {
 
 .pets-section .filter-container p,
 .pets-section .filter-buttons-wrapper button {
-  font-size: 22px;
+  font-size: var(--fs-20);
   font-weight: var(--fw-400--normal);
 }
 
@@ -402,6 +410,130 @@ footer p {
   justify-content: center;
   font-size: var(--fs-14);
   color: var(--gray-text-dimmed);
+}
+
+/* /* ------------------------ */
+/* BELOW 1250px (Desktops)              */
+/* --------------------------- */
+@media only screen and (max-width: 78.125rem) {
+  .call-out-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pet-cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* /* ------------------------ */
+/* BELOW 965px (Desktops)              */
+/* --------------------------- */
+@media only screen and (max-width: 60.25rem) {
+  h1 {
+    font-size: var(--fs-74);
+  }
+
+  h2 {
+    font-size: var(--fs-62);
+  }
+
+  .pets-section .filter-container p,
+  .pets-section .filter-buttons-wrapper button {
+    font-size: var(--fs-18);
+  }
+
+  .hero-section,
+  .call-out-section,
+  .pets-section {
+    padding-left: var(--lr-padding-md);
+    padding-right: var(--lr-padding-md);
+    padding-top: var(--tb-padding-md);
+    padding-bottom: var(--tb-padding-md);
+  }
+}
+
+/* /* ------------------------ */
+/* BELOW 740px (Desktops)              */
+/* --------------------------- */
+@media only screen and (max-width: 46.25rem) {
+  .hero-section,
+  .call-out-section,
+  .pets-section {
+    padding-left: var(--lr-padding-sm);
+    padding-right: var(--lr-padding-sm);
+    padding-top: var(--tb-padding-sm);
+    padding-bottom: var(--tb-padding-sm);
+  }
+}
+
+/* /* ------------------------ */
+/* BELOW 645px (Desktops)              */
+/* --------------------------- */
+@media only screen and (max-width: 40.3125rem) {
+  .call-out-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pets-section .filter-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-section p {
+    text-align: center;
+  }
+}
+
+/* /* ------------------------ */
+/* BELOW 540px (Desktops)              */
+/* --------------------------- */
+@media only screen and (max-width: 33.75rem) {
+  h1 {
+    font-size: var(--fs-62);
+  }
+
+  h2 {
+    font-size: var(--fs-52);
+  }
+
+  .pets-section .filter-container p,
+  .pets-section .filter-buttons-wrapper button {
+    font-size: var(--fs-16);
+  }
+
+  .hero-section,
+  .call-out-section,
+  .pets-section {
+    padding-left: var(--lr-padding-x-sm);
+    padding-right: var(--lr-padding-x-sm);
+    padding-top: var(--tb-padding-x-sm);
+    padding-bottom: var(--tb-padding-x-sm);
+  }
+}
+
+/* /* ------------------------ */
+/* BELOW 470px (Desktops)              */
+/* --------------------------- */
+@media only screen and (max-width: 29.375rem) {
+  .pets-section .pet-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: var(--br-card);
+    overflow: hidden;
+    background-color: var(--light-background);
+    border: 1px solid var(--gray-border);
+    box-shadow: var(--box-shadow);
+  }
+
+  .hero-section .btn-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: var(--spacing-32px);
+  }
+
+  .btn {
+    text-align: center;
+  }
 }
 
 /* 
