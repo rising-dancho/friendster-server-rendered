@@ -458,11 +458,12 @@ footer p {
 @media only screen and (max-width: 46.25rem) {
   .hero-section,
   .call-out-section,
-  .pets-section {
+  .pets-section,
+  .footer-section {
     padding-left: var(--lr-padding-sm);
     padding-right: var(--lr-padding-sm);
-    padding-top: var(--tb-padding-sm);
-    padding-bottom: var(--tb-padding-sm);
+    padding-top: var(--tb-padding-sm) !important;
+    padding-bottom: var(--tb-padding-sm) !important;
   }
 }
 
