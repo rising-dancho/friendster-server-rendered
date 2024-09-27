@@ -97,6 +97,9 @@
 
   --tb-padding-x-sm: 4.0625rem;
   --lr-padding-x-sm: 2.75rem;
+
+  --tb-padding-xx-sm: 2.688rem;
+  --lr-padding-xx-sm: 1.35rem;
 }
 
 /* ------------------------ */
@@ -444,11 +447,12 @@ footer p {
 
   .hero-section,
   .call-out-section,
-  .pets-section {
+  .pets-section,
+  .footer-section {
     padding-left: var(--lr-padding-md);
     padding-right: var(--lr-padding-md);
-    padding-top: var(--tb-padding-md);
-    padding-bottom: var(--tb-padding-md);
+    padding-top: var(--tb-padding-md) !important;
+    padding-bottom: var(--tb-padding-md) !important;
   }
 }
 
@@ -512,7 +516,8 @@ footer p {
 
   .hero-section,
   .call-out-section,
-  .pets-section {
+  .pets-section,
+  .footer-section {
     padding-left: var(--lr-padding-x-sm);
     padding-right: var(--lr-padding-x-sm);
     padding-top: var(--tb-padding-x-sm);
@@ -535,6 +540,21 @@ footer p {
 
   .btn {
     text-align: center;
+  }
+}
+
+/* /* ------------------------ */
+/* BELOW 400px (Desktops)              */
+/* --------------------------- */
+@media only screen and (max-width: 25rem) {
+  .hero-section,
+  .call-out-section,
+  .pets-section,
+  .footer-section {
+    padding-left: var(--lr-padding-xx-sm);
+    padding-right: var(--lr-padding-xx-sm);
+    padding-top: var(--tb-padding-xx-sm) !important;
+    padding-bottom: var(--tb-padding-xx-sm) !important;
   }
 }
 
